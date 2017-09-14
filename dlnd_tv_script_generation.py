@@ -43,7 +43,7 @@ def get_inputs():
     """
     input_ = tf.placeholder(tf.int32, shape=[None, None], name='input')
     targets = tf.placeholder(tf.int32, shape=[None, None], name='targets')
-    learning_rate = tf.placeholder(tf.int32, shape=None, name='learning_rate')
+    learning_rate = tf.placeholder(tf.float32, shape=None, name='learning_rate')
 
     return input_, targets, learning_rate
 
